@@ -1,0 +1,7 @@
+CREATE TABLE item (
+    item_id INT IDENTITY(1,1) NOT NULL,
+    item_title VARCHAR(10) NOT NULL,
+    item_localisation VARCHAR(50) NOT NULL,
+    item_category VARCHAR(20) NOT NULL,
+    CONSTRAINT PK_item PRIMARY KEY (item_id)
+)

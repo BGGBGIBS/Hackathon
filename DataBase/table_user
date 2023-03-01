@@ -1,0 +1,7 @@
+CREATE TABLE user (
+    user_id INT IDENTITY(1,1) NOT NULL,
+    user_firstname VARCHAR(10) NOT NULL,
+    user_lastname VARCHAR(50) NOT NULL,
+    user_birthdate DATETIME NOT NULL,
+    CONSTRAINT PK_user PRIMARY KEY (user_id)
+)

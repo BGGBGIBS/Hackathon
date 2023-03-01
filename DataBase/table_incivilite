@@ -1,0 +1,10 @@
+CREATE TABLE incivilite (
+    incivilite_id INT IDENTITY(1,1) NOT NULL,
+    incivilite_title VARCHAR(10) NOT NULL,
+    incivilite_description VARCHAR(50) NOT NULL,
+    incivilite_date DATETIME NOT NULL,
+    incivilite_localisation VARCHAR(50) NOT NULL,
+    user_id INT NOT NULL,
+    CONSTRAINT PK_incivilite PRIMARY KEY (incivilite_id),
+    constraint FK_incivilite_user foreign key (user_id) references user (user_id)
+)
